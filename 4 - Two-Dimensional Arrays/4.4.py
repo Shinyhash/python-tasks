@@ -2,7 +2,6 @@ B = [[1, 2, 3],
      [4, 5, 6],
      [7, 8, 9]]
 
-# Находим максимальный элемент массива
 max_element = B[0][0]
 max_row = 0
 max_col = 0
@@ -13,7 +12,6 @@ for i in range(len(B)):
             max_row = i
             max_col = j
 
-# Меняем местами первый и максимальный элементы массива
 B[0][0], B[max_row][max_col] = B[max_row][max_col], B[0][0]
 
 for row in B:
