@@ -6,11 +6,11 @@ matrix = [
 ]
 
 for i in range(len(matrix)):
-    max_in_row = max(matrix[i])
-    column_index = matrix[i].index(max_in_row)
-    column = [row[column_index] for row in matrix]
-    if max_in_row == min(column):
-        print(max_in_row)
+    maxR = max(matrix[i])
+    columnI = matrix[i].index(maxR)
+    column = [row[columnI] for row in matrix]
+    if maxR == min(column):
+        print(maxR)
         break
 else:
     print(0)

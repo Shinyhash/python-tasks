@@ -2,18 +2,18 @@ matrix = [[1, 2, 3],
           [4, 5, 6],
           [7, 8, 9]]
 
-max_elem = matrix[0][0]
-max_i = 0
-max_j = 0
+maxE = matrix[0][0]
+maxI = 0
+maxJ = 0
 for i in range(len(matrix)):
     for j in range(len(matrix[i])):
-        if matrix[i][j] > max_elem:
-            max_elem = matrix[i][j]
-            max_i = i
-            max_j = j
+        if matrix[i][j] > maxE:
+            maxE = matrix[i][j]
+            maxI = i
+            maxJ= j
 
 for i in range(len(matrix)):
-    matrix[i][max_j], matrix[max_i][i] = matrix[max_i][i], matrix[i][max_j]
+    matrix[i][maxJ], matrix[maxI][i] = matrix[maxI][i], matrix[i][maxJ]
 
 for row in matrix:
     print(row)

@@ -1,6 +1,6 @@
 matrix = [[-1, 2, -3], [4, -5, 6], [-7, 8, -9]]
 
-def positive_elements(matrix):
+def positiveE(matrix):
     result = []
     for row in matrix:
         for element in row:
@@ -8,5 +8,5 @@ def positive_elements(matrix):
                 result.append(element)
     return result
 
-result = positive_elements(matrix)
+result = positiveE(matrix)
 print(result)

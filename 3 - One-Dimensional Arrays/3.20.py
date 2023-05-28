@@ -1,4 +1,4 @@
-def rearrange_array(A):
+def swap(A):
     index = 0
 
     for i in range(len(A)):
@@ -9,5 +9,6 @@ def rearrange_array(A):
     return A
 
 A = [1, -2, 3, -4, 5, -6, 7, -8]
-rearranged_A = rearrange_array(A)
-print("Перемещенный массив A:", rearranged_A)
+
+rearrangedA = swap(A)
+print("Перемещенный массив A:", rearrangedA)

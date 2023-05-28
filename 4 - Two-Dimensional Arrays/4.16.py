@@ -1,24 +1,19 @@
-import random
+def swap_rows(matrix, k, j):
+    temp = matrix[k]
+    matrix[k] = matrix[j]
+    matrix[j] = temp
+    return matrix
+    
+N = 4
+matrix = [[1, 2, 3, 4],
+          [5, 6, 7, 8],
+          [9, 10, 11, 12],
+          [13, 14, 15, 16]]
 
-N = int(input("Введите размерность матрицы: "))
+k = 1
+j = 3
 
-matrix = [[random.randint(0, 9) for j in range(N)] for i in range(N)]
+result = swap_rows(matrix, k, j)
 
-print("Исходная матрица:")
-for i in range(N):
-    for j in range(N):
-        print(matrix[i][j], end=" ")
-    print()
-
-k = int(input("Введите номер первой строки: "))
-j = int(input("Введите номер второй строки: "))
-
-temp = matrix[k]
-matrix[k] = matrix[j]
-matrix[j] = temp
-
-print("Измененная матрица:")
-for i in range(N):
-    for j in range(N):
-        print(matrix[i][j], end=" ")
-    print()
+for row in result:
+    print(row)

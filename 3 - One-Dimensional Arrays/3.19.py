@@ -1,12 +1,13 @@
-def compress_array(A):
-    compressed_array = []
+def compress(A):
+    compressedArr = []
 
     for i in range(len(A)):
         if A[i] != 0:
-            compressed_array.append(A[i])
+            compressedArr.append(A[i])
 
-    return compressed_array
+    return compressedArr
 
 A = [1, 0, 2, 0, 3, 0, 4]
-compressed_A = compress_array(A)
-print("Сжатый массив A:", compressed_A)
+
+compressedA = compress(A)
+print("Сжатый массив A:", compressedA)

@@ -1,4 +1,4 @@
-def swap_element_with_first(A):
+def swap(A):
     index = -1
 
     for i in range(len(A)):
@@ -14,5 +14,6 @@ def swap_element_with_first(A):
     return A
 
 A = [10, 20, 30, 49, 40, 50, 60]
-modified_A = swap_element_with_first(A)
-print("Измененный массив A:", modified_A)
+
+modifiedA = swap(A)
+print("Измененный массив A:", modifiedA)

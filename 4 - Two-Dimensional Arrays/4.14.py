@@ -5,17 +5,17 @@ matrix = [
     [0, 0, 0, 0]
 ]
 
-def remove_zero_columns(matrix):
-    new_matrix = []
+def removeCol(matrix):
+    newM = []
     for column in range(len(matrix[0])):
-        column_has_value = False
+        columnV = False
         for row in range(len(matrix)):
             if matrix[row][column] != 0:
-                column_has_value = True
+                columnV = True
                 break
-        if column_has_value:
-            new_matrix.append([matrix[row][column] for row in range(len(matrix))])
-    return new_matrix
+        if columnV:
+            newM.append([matrix[row][column] for row in range(len(matrix))])
+    return newM
 
-new_matrix = remove_zero_columns(matrix)
-print(new_matrix)
+newM = removeCol(matrix)
+print(newM)

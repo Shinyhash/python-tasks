@@ -5,13 +5,13 @@ matrix = [[4, 7, 3, 9, 5, 2, 1, 8, 6, 0],
           [0, 5, 3, 2, 1, 9, 7, 4, 6, 8]]
 
 for row in matrix:
-    min_elem = min(row)
-    max_elem = max(row)
+    minE = min(row)
+    maxE = max(row)
 
-    min_index = row.index(min_elem)
-    max_index = row.index(max_elem)
+    minI = row.index(minE)
+    maxI = row.index(maxE)
 
-    row[min_index], row[max_index] = row[max_index], row[min_index]
+    row[minI], row[maxI] = row[maxI], row[minI]
 
 for row in matrix:
     print(row)

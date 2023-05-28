@@ -1,14 +1,15 @@
-def reverse_elements_between_min_max(arr):
-    min_index = arr.index(min(arr))
-    max_index = arr.index(max(arr))
+def reverse(arr):
+    minI = arr.index(min(arr))
+    maxI = arr.index(max(arr))
 
-    if min_index > max_index:
-        min_index, max_index = max_index, min_index
+    if minI > maxI:
+        minI, maxI = maxI, minI
 
-    reversed_elements = arr[:min_index] + arr[max_index:min_index:-1] + arr[max_index+1:]
+    reversedE = arr[:minI] + arr[maxI:minI:-1] + arr[maxI+1:]
 
-    return reversed_elements
+    return reversedE
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-reversed_array = reverse_elements_between_min_max(array)
-print(reversed_array)
+
+reversedArr = reverse(array)
+print(reversedArr)

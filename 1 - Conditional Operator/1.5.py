@@ -5,6 +5,6 @@ tens = (a // 10) % 10
 ones = a % 10
 
 if hundreds == ones:
-    print("палиндром")
+    print("Палиндром")
 else:
-    print("не палиндром")
+    print("Не палиндром")

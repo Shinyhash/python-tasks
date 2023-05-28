@@ -5,5 +5,5 @@ matrix = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
           [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]]
 
 for row in matrix:
-    min_element = min(row)
-    print(f"Минимальный элемент в строке {matrix.index(row) + 1}: {min_element}")
+    minE = min(row)
+    print(f"Минимальный элемент в строке {matrix.index(row) + 1}: {minE}")

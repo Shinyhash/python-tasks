@@ -1,11 +1,9 @@
 import math
 
-# Вводим номер и значение элемента
 num, val = input().split()
 num = int(num)
 val = float(val)
 
-# Вычисляем остальные элементы
 if num == 1:
     a = val
     R1 = a / 2
@@ -28,7 +26,6 @@ else:
     R1 = a / 2
     R2 = a * math.sqrt(3) / 3
 
-# Выводим остальные элементы
 print("{:.3f}".format(a))
 print("{:.3f}".format(R1))
 print("{:.3f}".format(R2))

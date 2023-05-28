@@ -3,6 +3,6 @@ a = int(input())
 b = (a // 10) + (a % 10)
 
 if b % 3 == 0:
-    print("kratna")
+    print("Yes")
 else:
-    print("nekratna")
+    print("No")

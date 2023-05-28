@@ -4,9 +4,9 @@ matrix = [
     [7.0, 8.0, 9.0],
 ]
 
-def find_row_diffs(matrix):
+def findrD(matrix):
     n, m = len(matrix), len(matrix[0])
-    diffs = [0] * n  # инициализируем массив нулями
+    diffs = [0] * n
 
     for i in range(n):
         row_min, row_max = float('inf'), float('-inf')
@@ -17,5 +17,5 @@ def find_row_diffs(matrix):
 
     return diffs
 
-diffs = find_row_diffs(matrix)
+diffs = findrD(matrix)
 print(diffs)

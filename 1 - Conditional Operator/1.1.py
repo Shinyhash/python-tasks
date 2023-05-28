@@ -1,6 +1,6 @@
 a = int(input())
 
 if a <= 5:
-	print("yes")
+	print("Yes")
 else:
-	print("no")
+	print("No")

@@ -4,9 +4,9 @@ r = float(input("Введите радиус шара: "))
 p = float(input("Введите сторону ромба: "))
 q = float(input("Введите острый угол ромба в градусах: "))
 
-q_rad = math.radians(q)
+qRad = math.radians(q)
 
-d = p * math.sqrt(2 - 2 * math.cos(q_rad))
+d = p * math.sqrt(2 - 2 * math.cos(qRad))
 
 if d >= 2 * r:
     print("Шар с радиусом", r, "сможет пройти через ромбообразное отверстие со стороной", p, "и острым углом", q, "градусов.")

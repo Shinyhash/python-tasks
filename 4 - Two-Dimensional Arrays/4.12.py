@@ -7,7 +7,7 @@ matrix = [
 b = []
 
 for row in matrix:
-    negative_count = sum(1 for elem in row if elem < 0)
-    b.append(negative_count)
+    negativeC = sum(1 for elem in row if elem < 0)
+    b.append(negativeC)
 
 print(b)

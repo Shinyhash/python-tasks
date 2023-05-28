@@ -6,16 +6,16 @@ matrix = [
     [9, 7, 4, 5, 1, 2, 3, 6, 8, 7]
 ]
 
-max_element = matrix[0][0]
-max_col_index = 0
+maxE = matrix[0][0]
+maxI = 0
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
-        if matrix[i][j] > max_element:
-            max_element = matrix[i][j]
-            max_col_index = j
+        if matrix[i][j] > maxE:
+            maxE = matrix[i][j]
+            maxC = j
 
 for i in range(len(matrix)):
-    del matrix[i][max_col_index]
+    del matrix[i][maxC]
 
 for row in matrix:
     print(row)

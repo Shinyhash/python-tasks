@@ -6,15 +6,15 @@ matrix = [
     [9, 7, 4, 5, 1, 2, 3, 6, 8, 7]
 ]
 
-min_element = matrix[0][0]
-min_row_index = 0
+minE = matrix[0][0]
+minI = 0
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
-        if matrix[i][j] < min_element:
-            min_element = matrix[i][j]
-            min_row_index = i
+        if matrix[i][j] < minE:
+            minE = matrix[i][j]
+            minI = i
 
-del matrix[min_row_index]
+del matrix[minI]
 
 for row in matrix:
     print(row)

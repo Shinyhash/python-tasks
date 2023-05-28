@@ -5,13 +5,13 @@ matrix = [
     [0, 0, 0]
 ]
 
-def find_zero_rows(matrix):
+def findR(matrix):
     n = len(matrix)
-    zero_rows = []
+    zeroR = []
     for i in range(n):
         if all(x == 0 for x in matrix[i]):
-            zero_rows.append(i)
-    return zero_rows
+            zeroR.append(i)
+    return zeroR
 
-zero_rows = find_zero_rows(matrix)
-print(zero_rows)
+zeroRm = findR(matrix)
+print(zeroR)

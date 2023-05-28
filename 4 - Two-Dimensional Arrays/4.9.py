@@ -11,11 +11,11 @@ for j in range(M):
         print(mas[j][i], end=" ")
     print()
 
-otvet = 0
+response = 0
 t = 0
 temp = 0
 count = 0
-totalCount = 0
+totalC = 0
 
 for z in range(N):
     for j in range(M):
@@ -25,13 +25,13 @@ for z in range(N):
             if temp == mas[index+1][z]:
                 count += 1
                 index += 1
-        if otvet < count:
-            otvet = count + 1
+        if response < count:
+            response = count + 1
         count = 0
-        if totalCount <= otvet:
-            totalCount = otvet
+        if totalC <= response:
+            totalC = response
             t = z
-        otvet = 0
+        response = 0
 
-print("Otvet:", totalCount)
-print("Nomer stolbtca:", t+1)
+print("Response:", totalC)
+print("Column number:", t+1)
