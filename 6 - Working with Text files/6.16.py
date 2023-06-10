@@ -1,4 +1,4 @@
-def wp(inp, out):
+def abc(inp, out):
     with open(inp, 'r') as file:
         n = file.read().split()
         pn = [num for num in n if int(num) > 0]
@@ -9,4 +9,4 @@ def wp(inp, out):
 inp = '6.16.f.txt'
 out = '6.16.f2.txt'
 
-wp(inp, out)
+abc(inp, out)
