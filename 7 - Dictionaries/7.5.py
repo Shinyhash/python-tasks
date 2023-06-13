@@ -1,13 +1,13 @@
 def abc(s):
     print("Анкетные данные учеников:")
-    for st, details in s.items():
-        print(f"Ф.И.О.: {st}")
-        print(f"Год рождения: {details['yr']}")
-        print(f"Адрес: {details['ad']}")
+    for ss, d in s.items():
+        print(f"Ф.И.О.: {ss}")
+        print(f"Год рождения: {d['yr']}")
+        print(f"Адрес: {d['ad']}")
         
         print("Сведения о родителях:")
-        print(f"Имя отца: {details['pr']['f']}")
-        print(f"Имя матери: {details['pr']['m']}")
+        print(f"Имя отца: {d['pr']['f']}")
+        print(f"Имя матери: {d['pr']['m']}")
         print()
 
 s = {
